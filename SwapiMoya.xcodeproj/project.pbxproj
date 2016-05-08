@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1BF3A8B7381FEA5E7B1610CF /* Pods_SwapiMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A78EF0CBBF28369D597B101 /* Pods_SwapiMoya.framework */; };
 		FB5AB1691CA8CDAF00EF003D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB1681CA8CDAF00EF003D /* Person.swift */; };
-		FB5AB16B1CA8CF3300EF003D /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB16A1CA8CF3300EF003D /* PersonTests.swift */; };
 		FB5AB16F1CA8D0D300EF003D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB16D1CA8D0D300EF003D /* BaseViewController.swift */; };
 		FB5AB1701CA8D0D300EF003D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5AB16E1CA8D0D300EF003D /* BaseViewController.xib */; };
 		FB5AB1721CA8D51200EF003D /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB1711CA8D51200EF003D /* Film.swift */; };
@@ -46,7 +45,6 @@
 		8740E23DC101F38028365961 /* Pods-SwapiMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.release.xcconfig"; sourceTree = "<group>"; };
 		F653B694D9B2A522F325C328 /* Pods-SwapiMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.debug.xcconfig"; sourceTree = "<group>"; };
 		FB5AB1681CA8CDAF00EF003D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		FB5AB16A1CA8CF3300EF003D /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = ../SwapiMoya/PersonTests.swift; sourceTree = "<group>"; };
 		FB5AB16D1CA8D0D300EF003D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FB5AB16E1CA8D0D300EF003D /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		FB5AB1711CA8D51200EF003D /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 		FBF48BEE1CA2440000B27EC2 /* SwapiMoyaTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB5AB16A1CA8CF3300EF003D /* PersonTests.swift */,
 				FBF48BF11CA2440000B27EC2 /* Info.plist */,
 			);
 			path = SwapiMoyaTests;
@@ -418,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB5AB16B1CA8CF3300EF003D /* PersonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
