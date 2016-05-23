@@ -14,6 +14,7 @@ let cellIdentifier = String(PersonTableViewCell)
 class BaseViewController: UIViewController {
 
     let viewModel = PersonTableViewModel()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,7 +22,6 @@ class BaseViewController: UIViewController {
         let cellNib = UINib(nibName: cellIdentifier, bundle: nil)
         tableView.registerNib(cellNib, forCellReuseIdentifier: cellIdentifier)
         tableView.estimatedRowHeight = 80
-        viewModel.downloadPerson()
         
         bindViewModel()
         tableView.reloadData()
@@ -37,6 +37,7 @@ class BaseViewController: UIViewController {
     }
     
     func bindViewModel() {
+        viewModel.downloadPerson()
         viewModel.people.lift().bindTo(tableView) { indexPath, dataSource, tableView in
             let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PersonTableViewCell
             let person = dataSource[indexPath.section][indexPath.row]

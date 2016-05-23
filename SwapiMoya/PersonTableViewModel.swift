@@ -14,13 +14,11 @@ class PersonTableViewModel {
     let people = ObservableArray<Person>()
 
     func downloadPerson() {
-        SwapiProvider.request(.People) { (result) in
+        SwapiProvider.request(.People) { [unowned self] (result) in
             switch result {
             case let .Success(response):
                 let json = JSON(data: response.data)["results"].arrayValue
-                print(json)
                 let mappedPeople = json.map { Person.fromJSON($0) }
-                print(mappedPeople)
                 self.people.removeAll()
                 self.people.insertContentsOf(mappedPeople, atIndex: 0)
             case let .Failure(error):
