@@ -4,8 +4,8 @@
 use_frameworks!
 
 target 'SwapiMoya' do
-  pod 'Moya'
-  pod 'Bond'
+  pod 'Moya/RxSwift'
+  pod 'RxCocoa'
   pod 'SwiftyJSON'
 end
 

@@ -26,8 +26,12 @@ struct Person: JSONable {
         let homeworld = json["homeworld"].stringValue
         return Person(name: name, birthYear: birthYear, homeworld: homeworld)
     }
-
-    static func fromJSONArray(json: [String: AnyObject]) -> [Person] {
-        return json.map { Person.fromJSON(JSON(dictionaryLiteral: $0)) }
+    
+    static func arrayFromJSON(object: AnyObject) -> [Person] {
+        let json = JSON(object)
+        return json["results"].arrayValue.map {
+            return Person.fromJSON($0)
+        }
     }
+
 }

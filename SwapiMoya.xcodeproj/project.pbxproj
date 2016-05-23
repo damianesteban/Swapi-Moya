@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BF3A8B7381FEA5E7B1610CF /* Pods_SwapiMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A78EF0CBBF28369D597B101 /* Pods_SwapiMoya.framework */; };
+		4D2B66D5BFBBEE91C1AAD66A /* Pods_SwapiMoyaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79120242A4370BFD3ECCACC5 /* Pods_SwapiMoyaTests.framework */; };
+		6F92BD28F4BFAA45D4CC0BF9 /* Pods_SwapiMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CB771BB1A8425B96469A84 /* Pods_SwapiMoya.framework */; };
+		995A4C330E3AA570708CAD44 /* Pods_SwapiMoyaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAD4DB6D69010CF5FE72FDE /* Pods_SwapiMoyaUITests.framework */; };
 		FB5AB1691CA8CDAF00EF003D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB1681CA8CDAF00EF003D /* Person.swift */; };
 		FB5AB16F1CA8D0D300EF003D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB16D1CA8D0D300EF003D /* BaseViewController.swift */; };
 		FB5AB1701CA8D0D300EF003D /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB5AB16E1CA8D0D300EF003D /* BaseViewController.xib */; };
 		FB5AB1721CA8D51200EF003D /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5AB1711CA8D51200EF003D /* Film.swift */; };
 		FB83F2721CDEB4B7004D9E80 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB83F2701CDEB4B7004D9E80 /* PersonTableViewCell.swift */; };
 		FB83F2731CDEB4B7004D9E80 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB83F2711CDEB4B7004D9E80 /* PersonTableViewCell.xib */; };
-		FB95BD201CB08C02001ED13D /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB95BD1F1CB08C02001ED13D /* SwapiService.swift */; };
-		FB99DDB11CB20EC5006A3B8E /* PersonTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99DDB01CB20EC5006A3B8E /* PersonTableViewModel.swift */; };
 		FBD576CD1CCC72E30065222F /* JSONable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD576CC1CCC72E30065222F /* JSONable.swift */; };
+		FBE4FB0E1CF372DA004E58F6 /* SwapiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4FB0D1CF372DA004E58F6 /* SwapiService.swift */; };
 		FBF48BE01CA2440000B27EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF48BDF1CA2440000B27EC2 /* AppDelegate.swift */; };
 		FBF48BE21CA2440000B27EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF48BE11CA2440000B27EC2 /* Assets.xcassets */; };
 		FBF48BE51CA2440000B27EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF48BE31CA2440000B27EC2 /* LaunchScreen.storyboard */; };
@@ -41,19 +42,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A78EF0CBBF28369D597B101 /* Pods_SwapiMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapiMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8740E23DC101F38028365961 /* Pods-SwapiMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.release.xcconfig"; sourceTree = "<group>"; };
-		F653B694D9B2A522F325C328 /* Pods-SwapiMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.debug.xcconfig"; sourceTree = "<group>"; };
+		0AD6CC785A116BC1926DEC13 /* Pods-SwapiMoyaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoyaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoyaTests/Pods-SwapiMoyaTests.release.xcconfig"; sourceTree = "<group>"; };
+		33791B84E9D21ECAE8FF45CD /* Pods-SwapiMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.release.xcconfig"; sourceTree = "<group>"; };
+		461E0A3298AEF556824DD908 /* Pods-SwapiMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya.debug.xcconfig"; sourceTree = "<group>"; };
+		5CAD4DB6D69010CF5FE72FDE /* Pods_SwapiMoyaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapiMoyaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B5C77D2AE5EC63F72000E6 /* Pods-SwapiMoyaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoyaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoyaUITests/Pods-SwapiMoyaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		716DC80B14A256182E0182AF /* Pods-SwapiMoyaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoyaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoyaUITests/Pods-SwapiMoyaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79120242A4370BFD3ECCACC5 /* Pods_SwapiMoyaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapiMoyaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CB771BB1A8425B96469A84 /* Pods_SwapiMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapiMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E858913126B8F1281B13B65D /* Pods-SwapiMoyaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapiMoyaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwapiMoyaTests/Pods-SwapiMoyaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB5AB1681CA8CDAF00EF003D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FB5AB16D1CA8D0D300EF003D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FB5AB16E1CA8D0D300EF003D /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		FB5AB1711CA8D51200EF003D /* Film.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		FB83F2701CDEB4B7004D9E80 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		FB83F2711CDEB4B7004D9E80 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
-		FB95BD1F1CB08C02001ED13D /* SwapiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapiService.swift; sourceTree = "<group>"; };
-		FB99DDB01CB20EC5006A3B8E /* PersonTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewModel.swift; sourceTree = "<group>"; };
 		FBD576CC1CCC72E30065222F /* JSONable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONable.swift; sourceTree = "<group>"; };
 		FBE0EDBC1CB623F400455095 /* SwapiMoya-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwapiMoya-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBE4FB0D1CF372DA004E58F6 /* SwapiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwapiService.swift; sourceTree = "<group>"; };
 		FBF48BDC1CA243FF00B27EC2 /* SwapiMoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapiMoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF48BDF1CA2440000B27EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF48BE11CA2440000B27EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BF3A8B7381FEA5E7B1610CF /* Pods_SwapiMoya.framework in Frameworks */,
+				6F92BD28F4BFAA45D4CC0BF9 /* Pods_SwapiMoya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2B66D5BFBBEE91C1AAD66A /* Pods_SwapiMoyaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,25 +93,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995A4C330E3AA570708CAD44 /* Pods_SwapiMoyaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		843AB9E0EDD4CEF7F01B79E3 /* Pods */ = {
+		CA3B8906236D8441B6670AB3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F653B694D9B2A522F325C328 /* Pods-SwapiMoya.debug.xcconfig */,
-				8740E23DC101F38028365961 /* Pods-SwapiMoya.release.xcconfig */,
+				461E0A3298AEF556824DD908 /* Pods-SwapiMoya.debug.xcconfig */,
+				33791B84E9D21ECAE8FF45CD /* Pods-SwapiMoya.release.xcconfig */,
+				E858913126B8F1281B13B65D /* Pods-SwapiMoyaTests.debug.xcconfig */,
+				0AD6CC785A116BC1926DEC13 /* Pods-SwapiMoyaTests.release.xcconfig */,
+				60B5C77D2AE5EC63F72000E6 /* Pods-SwapiMoyaUITests.debug.xcconfig */,
+				716DC80B14A256182E0182AF /* Pods-SwapiMoyaUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CB81EA49B16D5B7453DB2A91 /* Frameworks */ = {
+		F43DC65287FE479B672072BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1A78EF0CBBF28369D597B101 /* Pods_SwapiMoya.framework */,
+				E4CB771BB1A8425B96469A84 /* Pods_SwapiMoya.framework */,
+				79120242A4370BFD3ECCACC5 /* Pods_SwapiMoyaTests.framework */,
+				5CAD4DB6D69010CF5FE72FDE /* Pods_SwapiMoyaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +144,7 @@
 		FB78277F1CBA03C0007C0236 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FB95BD1F1CB08C02001ED13D /* SwapiService.swift */,
+				FBE4FB0D1CF372DA004E58F6 /* SwapiService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -138,7 +152,6 @@
 		FB7827801CBA03CD007C0236 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FB99DDB01CB20EC5006A3B8E /* PersonTableViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -167,8 +180,8 @@
 				FBF48BEE1CA2440000B27EC2 /* SwapiMoyaTests */,
 				FBF48BF91CA2440000B27EC2 /* SwapiMoyaUITests */,
 				FBF48BDD1CA243FF00B27EC2 /* Products */,
-				843AB9E0EDD4CEF7F01B79E3 /* Pods */,
-				CB81EA49B16D5B7453DB2A91 /* Frameworks */,
+				CA3B8906236D8441B6670AB3 /* Pods */,
+				F43DC65287FE479B672072BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,12 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF48BFF1CA2440000B27EC2 /* Build configuration list for PBXNativeTarget "SwapiMoya" */;
 			buildPhases = (
-				1E3CE66C28806A96CC260428 /* Check Pods Manifest.lock */,
+				861F23F1984EB8372538B7DF /* 📦 Check Pods Manifest.lock */,
 				FBF48BD81CA243FF00B27EC2 /* Sources */,
 				FBF48BD91CA243FF00B27EC2 /* Frameworks */,
 				FBF48BDA1CA243FF00B27EC2 /* Resources */,
-				2145D51E266B9FE4CEFBC5C8 /* Embed Pods Frameworks */,
-				EA82DABA52E8182816AFB148 /* Copy Pods Resources */,
+				9F9820AB9943E99B1BD22BEC /* 📦 Embed Pods Frameworks */,
+				C286282F2FC08ABEDEE926F7 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF48C021CA2440000B27EC2 /* Build configuration list for PBXNativeTarget "SwapiMoyaTests" */;
 			buildPhases = (
+				6D3AC916D7F33318CC37CA55 /* 📦 Check Pods Manifest.lock */,
 				FBF48BE71CA2440000B27EC2 /* Sources */,
 				FBF48BE81CA2440000B27EC2 /* Frameworks */,
 				FBF48BE91CA2440000B27EC2 /* Resources */,
+				9FF5A2F18B8B755E5E2B24FC /* 📦 Embed Pods Frameworks */,
+				BF8D227A0EAACF27F489B09C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBF48C051CA2440000B27EC2 /* Build configuration list for PBXNativeTarget "SwapiMoyaUITests" */;
 			buildPhases = (
+				0833350871C716879F9B6E33 /* 📦 Check Pods Manifest.lock */,
 				FBF48BF21CA2440000B27EC2 /* Sources */,
 				FBF48BF31CA2440000B27EC2 /* Frameworks */,
 				FBF48BF41CA2440000B27EC2 /* Resources */,
+				CCB60CAC9E35A3DA9F55DF02 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,14 +366,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E3CE66C28806A96CC260428 /* Check Pods Manifest.lock */ = {
+		0833350871C716879F9B6E33 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,14 +381,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2145D51E266B9FE4CEFBC5C8 /* Embed Pods Frameworks */ = {
+		6D3AC916D7F33318CC37CA55 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		861F23F1984EB8372538B7DF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9820AB9943E99B1BD22BEC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,19 +426,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA82DABA52E8182816AFB148 /* Copy Pods Resources */ = {
+		9FF5A2F18B8B755E5E2B24FC /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapiMoyaTests/Pods-SwapiMoyaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF8D227A0EAACF27F489B09C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapiMoyaTests/Pods-SwapiMoyaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C286282F2FC08ABEDEE926F7 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapiMoya/Pods-SwapiMoya-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCB60CAC9E35A3DA9F55DF02 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwapiMoyaUITests/Pods-SwapiMoyaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -401,13 +494,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5AB1691CA8CDAF00EF003D /* Person.swift in Sources */,
-				FB95BD201CB08C02001ED13D /* SwapiService.swift in Sources */,
 				FB5AB1721CA8D51200EF003D /* Film.swift in Sources */,
 				FBF48BE01CA2440000B27EC2 /* AppDelegate.swift in Sources */,
 				FB5AB16F1CA8D0D300EF003D /* BaseViewController.swift in Sources */,
 				FBD576CD1CCC72E30065222F /* JSONable.swift in Sources */,
+				FBE4FB0E1CF372DA004E58F6 /* SwapiService.swift in Sources */,
 				FB83F2721CDEB4B7004D9E80 /* PersonTableViewCell.swift in Sources */,
-				FB99DDB11CB20EC5006A3B8E /* PersonTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +632,7 @@
 		};
 		FBF48C001CA2440000B27EC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F653B694D9B2A522F325C328 /* Pods-SwapiMoya.debug.xcconfig */;
+			baseConfigurationReference = 461E0A3298AEF556824DD908 /* Pods-SwapiMoya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -555,7 +647,7 @@
 		};
 		FBF48C011CA2440000B27EC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8740E23DC101F38028365961 /* Pods-SwapiMoya.release.xcconfig */;
+			baseConfigurationReference = 33791B84E9D21ECAE8FF45CD /* Pods-SwapiMoya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -569,6 +661,7 @@
 		};
 		FBF48C031CA2440000B27EC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E858913126B8F1281B13B65D /* Pods-SwapiMoyaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwapiMoyaTests/Info.plist;
@@ -581,6 +674,7 @@
 		};
 		FBF48C041CA2440000B27EC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD6CC785A116BC1926DEC13 /* Pods-SwapiMoyaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SwapiMoyaTests/Info.plist;
@@ -593,6 +687,7 @@
 		};
 		FBF48C061CA2440000B27EC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B5C77D2AE5EC63F72000E6 /* Pods-SwapiMoyaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwapiMoyaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -604,6 +699,7 @@
 		};
 		FBF48C071CA2440000B27EC2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716DC80B14A256182E0182AF /* Pods-SwapiMoyaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwapiMoyaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

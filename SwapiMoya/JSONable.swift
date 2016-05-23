@@ -11,5 +11,4 @@ import SwiftyJSON
 
 protocol JSONable {
     static func fromJSON(json: JSON) -> Self
-    static func fromJSONArray(json: [String: AnyObject]) -> [Self]
 }

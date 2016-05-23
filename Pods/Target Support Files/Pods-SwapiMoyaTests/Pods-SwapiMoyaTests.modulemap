@@ -1,0 +1,6 @@
+framework module Pods_SwapiMoyaTests {
+  umbrella header "Pods-SwapiMoyaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
