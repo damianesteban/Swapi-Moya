@@ -19,7 +19,6 @@ class BaseViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     let swapiService = SwapiService()
-    var people: Observable<[Person]>?
     
     convenience init() {
         self.init(nibName: "BaseViewController", bundle: nil)
@@ -27,17 +26,16 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cellNib = UINib(nibName: cellIdentifier, bundle: nil)
-        tableView.registerNib(cellNib, forCellReuseIdentifier: cellIdentifier)
-        tableView.estimatedRowHeight = 80
-        
+        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
+
         swapiService.fetchPeople()
-            .observeOn(MainScheduler.instance)
-            .subscribeNext { people in
-                
-                print(people)
-        }
-        .addDisposableTo(disposeBag)
+            .bindTo(tableView.rx_itemsWithCellFactory) { (tableView, row, item) in
+                let cell = tableView.dequeueReusableCellWithIdentifier("DefaultCell",
+                    forIndexPath: NSIndexPath(forRow: row, inSection: 0))
+                cell.textLabel?.text = item.name
+                return cell
+            }.addDisposableTo(disposeBag)
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

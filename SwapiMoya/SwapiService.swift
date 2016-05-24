@@ -16,6 +16,7 @@ struct SwapiService {
     
     func fetchPeople() -> Observable<[Person]> {
         return NSURLSession.sharedSession().rx_JSON(NSURL(string: baseURLString + "/people")!)
+            .observeOn(MainScheduler.instance)
             .map { json in
                 return Person.arrayFromJSON(json)
         }
