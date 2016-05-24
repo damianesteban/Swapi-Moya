@@ -6,6 +6,7 @@
 //  Copyright © 2016 Damian Esteban. All rights reserved.
 //
 
+
 import UIKit
 import SwiftyJSON
 import RxSwift
@@ -28,13 +29,14 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
 
-        swapiService.fetchPeople()
+        swapiService.fetchMorePeople()
             .bindTo(tableView.rx_itemsWithCellFactory) { (tableView, row, item) in
                 let cell = tableView.dequeueReusableCellWithIdentifier("DefaultCell",
                     forIndexPath: NSIndexPath(forRow: row, inSection: 0))
                 cell.textLabel?.text = item.name
                 return cell
             }.addDisposableTo(disposeBag)
+        
         tableView.reloadData()
     }
 

@@ -9,6 +9,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import Alamofire
+import RxAlamofire
 
 struct SwapiService {
     
@@ -19,6 +21,19 @@ struct SwapiService {
             .observeOn(MainScheduler.instance)
             .map { json in
                 return Person.arrayFromJSON(json)
+        }
+    }
+    
+    func fetchMorePeople() -> Observable<[Person]> {
+         return RxAlamofire.request(.GET, baseURLString + "/people")
+            .flatMap {
+                $0
+                    .validate()
+                    .rx_JSON()
+            }
+            .observeOn(MainScheduler.instance)
+            .map { json in
+            return Person.arrayFromJSON(json)
         }
     }
     
