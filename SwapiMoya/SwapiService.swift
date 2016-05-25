@@ -7,34 +7,53 @@
 //
 
 import Foundation
-import RxSwift
-import RxCocoa
-import Alamofire
-import RxAlamofire
+import Moya
 
-struct SwapiService {
+private func JSONResponseDataFormatter(data: NSData) -> NSData {
+    do {
+        let dataAsJSON = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+        let prettyData =  try NSJSONSerialization.dataWithJSONObject(dataAsJSON, options: .PrettyPrinted)
+        return prettyData
+    } catch {
+        return data
+    }
+}
+
+let SwapiProvider = RxMoyaProvider<SwapiService>(plugins: [NetworkLoggerPlugin(verbose: true,
+    responseDataFormatter: JSONResponseDataFormatter)])
+
+private extension String {
+    var URLEscapedString: String {
+        return self.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+    }
+}
+
+enum SwapiService {
+    case People
+}
+
+extension SwapiService: TargetType {
+    var baseURL: NSURL { return NSURL(string: "http://swapi.co/api")! }
     
-    let baseURLString = "http://swapi.co/api"
-    
-    func fetchPeople() -> Observable<[Person]> {
-        return NSURLSession.sharedSession().rx_JSON(NSURL(string: baseURLString + "/people")!)
-            .observeOn(MainScheduler.instance)
-            .map { json in
-                return Person.arrayFromJSON(json)
+    var path: String {
+        switch self {
+        case .People:
+            return "/people"
         }
     }
     
-    func fetchMorePeople() -> Observable<[Person]> {
-         return RxAlamofire.request(.GET, baseURLString + "/people")
-            .flatMap {
-                $0
-                    .validate()
-                    .rx_JSON()
-            }
-            .observeOn(MainScheduler.instance)
-            .map { json in
-            return Person.arrayFromJSON(json)
-        }
+    var method: Moya.Method {
+        return .GET
     }
     
+    var parameters: [String: AnyObject]? {
+        return nil
+    }
+    
+    var sampleData: NSData {
+        switch self {
+        case .People:
+            return "".dataUsingEncoding(NSUTF8StringEncoding)!
+        }
+    }
 }

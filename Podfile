@@ -7,8 +7,7 @@ target 'SwapiMoya' do
   pod 'Moya/RxSwift'
   pod 'RxCocoa'
   pod 'SwiftyJSON'
-  pod 'RxAlamofire'
-  pod 'Alamofire'
+  pod 'RxOptional'
 end
 
 target 'SwapiMoyaTests' do
