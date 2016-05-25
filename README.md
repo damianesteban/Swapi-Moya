@@ -1,3 +1,3 @@
 # SwapiMoya
 
-This repository contains a simple iOS application that uses Moya as an API client and Bond for data binding.  Ongoing experiment.
+This repository contains code for an iOS application using Moya and various reactive frameworks to interface with the [Swapi](http://swapi.co/api) api.  Work in progress.
